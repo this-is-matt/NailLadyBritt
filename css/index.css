@@ -79,7 +79,7 @@ nav a:hover {
 }
 
 .name h1:nth-child(1) {
-  text-align: left;
+  /* text-align: left; */
   margin: -1%;
 }
 
@@ -103,7 +103,7 @@ nav a:hover {
 
 .card {
   max-width: 320px;
-  box-shadow: 1px 1px 4px 1px #888;
+  box-shadow: 1px 1px 4px 1px #777;
   border-radius: 6px;
   background-color: #fff;
   font-family: arial, sans-serif;
@@ -150,7 +150,6 @@ nav a:hover {
 #galleryGrid button {
   font-size: 50px;
 }
-
 .collapse {
   background-color: transparent;
   cursor: pointer;
@@ -163,35 +162,29 @@ nav a:hover {
   /* transition: 5s;  */
   /* how do i get the hidden sections to transition in a cooler way? I think it is the transitions attribute but i can't figure out where to put it. */
 }
-
 .active,
 .collapse:hover {
   background-color: rgba(85, 85, 85, 0.15);
 }
-
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
   background-color: rgba(85, 85, 85, 0.15);
 }
-
 .content img {
   border-style: solid;
   border-color: rgba(85, 85, 85, 1);
   border-radius: 6px;
 }
-
 #gFirst {
   grid-row: 4/5;
   grid-column: 1/-1;
 }
-
 #gSecond {
   grid-row: 5/6;
   grid-column: 1/-1;
 }
-
 #gThird {
   grid-row: 6/7;
   grid-column: 1/-1;
@@ -204,7 +197,49 @@ nav a:hover {
   grid-template-rows: 0.5fr 0.25fr 1fr;
   grid-gap: 1em;
 }
-
 #schedule {
   grid-row: 2/3;
+}
+
+/* Pricing */
+.pCard {
+  font-size: 1.5rem;
+  margin: 4rem auto;
+  background-color: white;
+  padding: 1rem;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px #777;
+}
+.pCard div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 2rem;
+  margin: 0.5rem;
+  padding: 0 1rem;
+  border-radius: 8px;
+  background-color: #5555550e;
+}
+
+/* when links are added */
+/* .pCard div:hover{
+  background-color: rgba(85, 85, 85, 0.15);
+} */
+.pHead,
+.pCard h2 {
+  text-align: center;
+}
+.pCard .priceLabel {
+  grid-column: 1/2;
+}
+.pCard .prices {
+  text-align: left;
+  grid-column: 2/3;
+}
+.pDesc {
+  display: none;
+}
+.nailArt {
+  text-align: center;
 }
