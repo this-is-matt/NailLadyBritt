@@ -23,8 +23,8 @@
         <div id="socialBanner">
             <a href="https://www.instagram.com/_the_nail_lady/" target="blank"><img src="images/Insta Glyph.png"
                     alt="test"></a>
-            <a href="https://www.facebook.com/Nail-Lady-Britt-101986902263090" target="blank"><img src="images/facebook.png"
-                    alt="test"></a>
+            <a href="https://www.facebook.com/Nail-Lady-Britt-101986902263090" target="blank"><img
+                    src="images/facebook.png" alt="test"></a>
         </div>
     </header>
     <main id="galleryGrid">
@@ -33,7 +33,19 @@
             <h1>Lady</h1>
             <h1>Britt</h1>
         </div>
-        
+        <section class="sContainer">
+            <p class="inst">To schedule an appointment, please provide your contact details, the best time that works for you and any questions or comments you want to share. As part of the booking process, a booking fee of $20.00 will be required to hold your appointemnt. That amount will be subtracted from your appointment cost. This amount will not be refunded in the event of a cancellation.</p>
+
+            <form method="get" action="thanks.html" class="schedule">
+                <label for="name">Name: </label> <input id="name" name="name" type="text" required />
+                <label for="phone">Phone Number: </label> <input id="phone" name="phone" type="tel" required />
+                <label for="time">Preferred Time: </label> <input id="time" name="time" type="datetime-local" required />
+                <label for="details">Additional Details: </label> <textarea id="details" name="details"></textarea>
+                <button type="submit">Schedule Appointment</button>
+            </form>
+        </section>
+        <a href="https://venmo.com/?txn=pay&audience=public&recipients=nailladybritt&amount=20&note=Appointment%20Deposit">Venmo</a>
+
 
 </body>
 
